@@ -42,22 +42,39 @@ function ToDo({ route }) {
     <View style={styles.todoContainer}>
       <View style={styles.todoLeft}>
         <View style={styles.userContainer}>
-          {/* ... (user info section) */}
+          <Image source={{ uri: 'https://reactnative.dev/docs/assets/p_cat1.png' }} style={styles.userAvatar} />
+          <View style={styles.textContainer}>
+            <Text style={styles.userName}>Mohamed Lotfy</Text>
+            <Text style={styles.userEmail}>{email ? email : "m.lotfy@taqneen.com"}</Text>
+          </View>
         </View>
-        <View style={styles.search}>
-          {/* ... (search bar) */}
+        <View style={styles.search} >
+          <Svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+          >
+            <Circle cx="25" cy="25" r="10" fill="white" />
+            <Line x1="30" y1="30" x2="40" y2="40" stroke="white" stroke-width="3" />
+          </Svg>
+          <TextInput
+            placeholder="Search..."
+            onChangeText={text => setSearch(text)}
+            value={search}
+          />
         </View>
         <View>
           <FlatList
             data={filteredData}
             keyExtractor={item => item.id.toString()}
             renderItem={({ item }) => (
-              <TouchableOpacity onPress={() => createNewTextView(item.id)} style={styles.rowView}>
+              <View style={styles.rowView}>
                 <Text>
                   {item.svg}
                 </Text>
                 <Text>{item.name}</Text>
-              </TouchableOpacity>
+              </View>
             )}
           />
         </View>

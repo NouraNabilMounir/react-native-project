@@ -89,11 +89,11 @@ const styles = StyleSheet.create({
   },
   todoLeft: {
     flex: 1.3,
-    backgroundColor: '#24252A',
+    backgroundColor: '#eae0d5',
   },
   todoRight: {
     flex: 2,
-    backgroundColor: '#1F1E1F',
+    backgroundColor: '#c6ac8f',
     textAlign: 'center',
   },
   userContainer: {
@@ -127,11 +127,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     padding: 10 ,
-  },
-  todoRightText:{
-    fontWeight:'bold',
-    color:'#fff',
-    // fontSize:'16',
   },
 });
 
