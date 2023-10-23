@@ -83,17 +83,20 @@ const styles = StyleSheet.create({
   textRead: {
     fontWeight: 'bold',
   },
+  containerFlexStyle: {
+    flex:1,
+  },
   todoContainer: {
     flex: 1,
     flexDirection: 'row',
   },
   todoLeft: {
     flex: 1.3,
-    backgroundColor: '#eae0d5',
+    backgroundColor: '#242936',
   },
   todoRight: {
     flex: 2,
-    backgroundColor: '#c6ac8f',
+    backgroundColor: '#1F1E1F',
     textAlign: 'center',
   },
   userContainer: {
@@ -102,17 +105,18 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   userAvatar: {
-    width: 40,
-    height: 40,
+    width: 30,
+    height: 30,
     backgroundColor: '#fff',
-    borderRadius: 20,
+    borderRadius: 15,
   },
   textContainer: {
-    marginLeft: 16,
+    marginLeft: 8,
   },
   userName: {
     fontSize: 12,
     fontWeight: 'bold',
+    color: 'white',
   },
   userEmail: {
     fontSize: 12,
@@ -120,13 +124,59 @@ const styles = StyleSheet.create({
   },
   search: {
     flexDirection: 'row',
-    backgroundColor: 'gray',
+    backgroundColor: '#2F3443',
     alignItems: 'center',
+  },
+  typing:{
+    color: 'white',
   },
   rowView: {
     flexDirection: 'row',
     alignItems: 'center',
     padding: 10 ,
+  },
+  iconStyle: {
+    color: 'white',
+  },
+  textFlat: {
+    color: 'white',
+  },
+  textFlat2: {
+    color: 'white',
+    paddingStart:10,
+  },
+  textFlatList: {
+    marginEnd: 5,
+  },
+  buttonNew: {
+    backgroundColor: '#232833',
+    padding: 10,
+    alignItems: 'flex-end',
+  },
+  textNew: {
+    color: 'white',
+    alignSelf: 'flex-start',
+  },
+  viewListStyle: {
+    borderBottomColor: '#989AA8',
+    borderBottomWidth: 0.3,
+    width: '80%',
+    marginStart:'8%',
+  },
+  rightHeading: {
+    color: '#fff',
+    fontWeight:'bold',
+    textAlign: 'center',
+    padding:10,
+    fontSize: 20,
+    textTransform: 'capitalize',
+  },
+  taskStyle:{
+    backgroundColor: '#333233',
+    color: '#fff',
+    textAlign:'center',
+    marginBottom: 10,
+    padding:10,
   },
 });
 
